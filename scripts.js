@@ -42,5 +42,92 @@ function showTime() {
 
     
 }
-
 showTime();
+
+
+function showDate() {
+
+    var date = new Date();
+
+    var weekday = date.getDay();
+    var month = date.getMonth();
+    var day = date.getDate();
+    var year = date.getFullYear();  
+
+    switch(weekday) {
+        case 0: 
+            weekday = "Sunday";
+            break;
+        case 1:
+            weekday = "Monday";
+            break;
+        case 2:
+            weekday = "Tuesday";
+            break;
+        case 3:
+            weekday = "Wednesday";
+            break;
+        case 4:
+            weekday = "Thursday";
+            break;
+        case 5:
+            weekday = "Friday";
+            break;
+        case 6:
+            weekday = "Saturday";
+    }
+
+        switch(month) {
+        
+            case 0:
+                month = "January";
+                break;
+            case 1:
+                month = "February";
+                break;
+            case 2:
+                month = "March";
+                break;
+            case 3:
+                month = "April";
+                break;
+            case 4:
+                month = "May";
+                break;
+            case 5: 
+                month = "June";
+                break;
+            case 6:
+                month = "July";
+                break;
+            case 7:
+                month = "August";
+                break;
+            case 8:
+                month = "September";
+                break;
+            case 9:
+                month = "October";
+                break;
+            case 10:
+                month = "November";
+                break;
+            case 11:
+                month = "December";
+        
+    }
+    var date = weekday + ", " + month + " " + day + ", " + year;
+
+    document.getElementById("dateDisplay").innerText = date;
+
+}
+
+showDate();
+
+//JavaScript Clock Challenges:
+// 1. Add a different font (of your choice) for your clock to use.
+// 2. Display the current date below the time. For example: Today's date is: Tuesday, September 17th. *Hint - hours, minutes, and seconds aren't the only thing we can pull from a date object*
+// 3. Add a header to your clock displaying your name, GitHub link, and LinkedIn profile link.
+
+
+

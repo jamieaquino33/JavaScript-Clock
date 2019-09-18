@@ -3,8 +3,49 @@ body {
 }
 
 #clockDisplay {
-    color: white;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 80px;
+    color: orange;
+    position: absolute; /*We want to position this element exacty on the screen where we want it*/
+    top: 50%; /*move element down 50% of the height of the parent*/
+    left: 42%; /* Move element right 50% of the width of the parent */
+    /*transform: skew(20deg, 20deg); */
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    
 }
+
+#dateDisplay {
+    color: orange;
+    position: absolute; /*We want to position this element exacty on the screen where we want it*/
+    top: 25%; /*move element down 50% of the height of the parent*/
+    left: 15%; /* Move element right 50% of the width of the parent */
+    /*transform: skew(20deg, 20deg);*/
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 70px;
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.header {
+    background-color: orange;
+   
+}
+.header a {
+    background-color: orange;
+    padding: 16px 18px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.header a:hover {
+    background-color: darkseagreen;
+    transform: rotate(360deg);
+    transition-duration: 1.5s;
+    color: antiquewhite;
+}
+
